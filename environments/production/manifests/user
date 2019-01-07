@@ -1,0 +1,13 @@
+class apache {
+user { 'user1':
+  ensure             => 'present',
+  comment            => 'generic user',
+  home               => '/home/user1',
+  password           => 'GZ4jrSCPbd2rk',
+  password_max_age   => 99999,
+  password_min_age   => 0,
+  password_warn_days => 7,
+  shell              => '/bin/bash',
+  uid                => 2000,
+}
+}
